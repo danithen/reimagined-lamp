@@ -1,8 +1,8 @@
 ## Getting Started
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd pi-nvd-agent
+git clone https://github.com/danithen/reimagined-lamp
+cd reimagined-lamp
 ```
 
 ### 2. Configure Environment
