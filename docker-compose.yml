@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  risk-agent:
+    build: .
+    container_name: pi-nvd-agent
+    env_file: .env
+    # This allows the container to talk to Ollama running on the host machine
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    stdin_open: true # allow interactive input
+    tty: true       # allow interactive terminal
+    restart: always
