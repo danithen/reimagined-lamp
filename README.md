@@ -3,18 +3,18 @@
 ## Getting Started
 
 ### 1. Clone the Repository
-\`\`\`bash
+```bash
 git clone <your-repo-url>
 cd pi-nvd-agent
-\`\`\`
+```
 
 ### 2. Configure Environment
 Create a .env file in the root directory:
-\`\`\`bash
+```bash
 touch .env
-\`\`\`
+```
 Add the following variables:
-\`\`\`env
+```env
 # Ollama Configuration
 OLLAMA_BASE_URL=http://host.docker.internal:11434
 
@@ -22,19 +22,19 @@ OLLAMA_BASE_URL=http://host.docker.internal:11434
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_API_KEY=your_langsmith_key_here
 LANGCHAIN_PROJECT="pi-nvd-agent"
-\`\`\`
+```
 
 ### 3. Launch the Agent
 Build and start the container:
-\`\`\`bash
+```bash
 docker-compose up --build -d
-\`\`\`
+```
 
 ### 4. Interact with the Agent
 Since this is an interactive CLI tool, you must attach to the running container:
-\`\`\`bash
+```bash
 docker attach pi-nvd-agent
-\`\`\`
+```
 
 **Usage:**
 - Enter a CVE ID (e.g., CVE-2021-44228) when prompted.
