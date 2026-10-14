@@ -58,6 +58,8 @@ The agent applies the following policy:
 | Medium | Prerequisites are confirmed AND consequences are meaningful but not catastrophic. |
 | Low | Evidence establishes required conditions are absent, or consequences are minor. |
 | Insufficient | Material uncertainty prevents a decision; requires manual analyst review. |
+## Agent Diagram
+<img width="2224" height="2104" alt="image" src="https://github.com/user-attachments/assets/66991ea8-b433-4560-adea-2d9bfb960cdf" />
 
 ## Project Structure
 - index.ts: Core agent logic, LangGraph workflow, and CLI interface.
