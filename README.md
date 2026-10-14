@@ -1,4 +1,9 @@
 ## Getting Started
+### Prerequisite:
+In order to run this agent you need to have ollama installed (see the official guide here https://ollama.com/download)
+```
+ollama pull llama3.1
+```
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/danithen/reimagined-lamp
